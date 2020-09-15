@@ -10,8 +10,4 @@ function solution(fullText, searchText){
     return fullText.split(searchText).length - 1;
   }
 
-  function solution(fullText, searchText) {
-    let regex = new RegExp(searchText, "gi");
-    let arr = fullText.match(regex);
-    return arr ? arr.length : 0;
-  }
+  
