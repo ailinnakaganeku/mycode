@@ -15,8 +15,3 @@ function solve(s){
     return down>=up?s.toLowerCase():s.toUpperCase();
 }
 
-function solucion (s){
-let varMayus= s.split('').filter(item=>item.match(/[A-Z]/)).length
-let varMinus= s.split('').filter(item=>item.match(/[a-z]/)).length
-return varMinus>=varMayus? s.toLowerCase() : s.toUpperCase();
-}
