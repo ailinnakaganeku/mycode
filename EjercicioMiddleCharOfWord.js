@@ -15,20 +15,3 @@ function getMiddle(s) {
     return s.slice((s.length - 1) / 2, s.length / 2 + 1);
 }
 
-function getMiddle(s) {
-    return s.length % 2 == 0 ? s.charAt((s.length - 1) / 2) + s.charAt((s.length + 1) / 2) : s.charAt(s.length / 2);
-}
-
-function getMiddle(s) {
-    const middle = s.length / 2
-    const residue = (s.length + 1) % 2
-    return s.substring(middle - residue, middle + 1)
-}
-
-// function getMiddle(s) {
-//     return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
-// }
-
-// function getMiddle(s) {
-//     return s.length % 2 == 0 ? s.charAt((s.length - 1) / 2) + s.charAt((s.length + 1) / 2) : s.charAt(s.length / 2);
-// }
